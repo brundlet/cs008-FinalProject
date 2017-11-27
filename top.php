@@ -12,7 +12,7 @@ $path_parts = pathinfo($phpSelf);
 <html lang="en">
     <head>
 <!-- you can add php code here (similar to nav.php) to print a different title on each page -->
-        <title>Please Steal My Identity</title>
+        <title>Please Have My Identity</title>
 
         <meta charset="utf-8">
         <meta name="author" content="Brian Rundlet">
@@ -20,7 +20,7 @@ $path_parts = pathinfo($phpSelf);
 
         <!-- see: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/ -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/finalP.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/finalp.css" type="text/css" media="screen">
         <?php
         $debug=false;
         if (isset($_GET["debug"])){
