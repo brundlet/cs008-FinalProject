@@ -1,0 +1,223 @@
+*{
+	font-family: verdana;
+}
+p{
+	text-indent: 50px;
+}
+figure{
+    border: thin solid darkslategray;
+    border-radius: 0.4em;
+    padding: 0.5em;
+}
+figcaption {
+    color: #839e99;
+    font-style: italic;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+.img-right {
+    float: right;
+    margin-left: 1em;
+}
+.check-field{
+    margin: 0 0 1.25em 7.5em;
+}
+.radio-field{
+    margin: 0 0 1.25em 7.5em
+}
+.roundedCornersSmall{
+    border-radius: 0.4em;
+}
+
+.small {
+    width: 180px;
+
+}
+
+#top{
+    background-color: lightcyan;
+}
+nav{
+    background-color: lightcyan;
+    padding: 0.3em
+}
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 6px;
+    text-align: center;
+    width: 6em
+}
+nav ol li:hover{
+    background-color: #ccccff;
+    padding: 4px;
+}
+a:link{
+    background-color: #fff;
+    color: #009;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.activepage{
+    background-color: whitesmoke;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 0.3em grey;
+}
+#form form{
+    max-width: 38em;
+    margin: auto;
+}
+fieldset{
+    border: 2px solid blueviolet;
+    clear: both;
+    margin-top: 2em;
+    padding: 1em;
+}
+label{
+    color: lightcoral;
+    font-size: 1em;
+    font-weight: bold;
+}
+.form-heading{
+    border-bottom: 2px solid #ddd;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1.75em;
+    padding-bottom: 0.4em;
+}
+.text-field{
+    display: block;
+    float: left;
+    margin: 0 0 1.2em;
+    padding-right: 0.5em;
+    padding-top: 0.75em;
+    text-align: right;
+    width: 7em;
+}
+#form input{
+    box-sizing: border-box;
+    border: 2px solid turquoise;
+    box-shadow: 2px 2px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 1em;
+    outline: none;
+}
+#form input:focus{
+    border: 1px solid #0C0;
+}
+#form input[type=submit]{
+    background: turquoise none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #dadada;
+    color: #fff;
+    margin: 1em;
+    padding: 0.8em 1.4em;
+    cursor:pointer;
+}
+.buttons input{
+    
+}
+#form input[type=submit]:hover{
+    background: lightcyan;
+    color: black;
+}
+.buttons legend{
+    display: none;
+}
+.mistake{
+    color: #fff;
+    background-color: #800;
+    border: thin solid #000;
+}
+#errors ol li{
+    color: #ff5555;
+}
+#lab2 a:hover {
+	background-color: red;
+}
+table{
+    border: 2px solid purple;
+    border-collapse: collapse;
+}
+th, td{
+    border: 2px dashed purple;
+    padding: .4em;
+}
+tr:nth-child(odd){
+    background-color: lightgreen;
+}
+tr:nth-child(even){
+    background-color: #f9e45e;
+}
+tr:hover{
+    background-color: lightcyan;
+}
+.SeaIce h1{
+	background-color: yellow;
+}
+#lab2 h1{
+        text-transform: uppercase;
+}
+/* Lab3*/
+body#lab3, body#contest{
+    background-color: lavender;
+}
+#lab3 li:nth-child(odd), .Winna li:nth-child(odd){
+    background-color: yellow;
+    color: brown;
+}
+#lab3 li:nth-child(even), .Winna li:nth-child(even){
+    background-color: lightblue;
+    color: red;
+}
+/*Lab 4*/
+body#lab4, body#art{
+    margin: 10px 10px 10px 10px;
+}
+#lab4 img, #art img{
+    max-width: 100%;
+    border-radius: 0.4em;
+}
+#lab4 .small, #art .small{
+    width: 100px;
+}
+#lab4 figure, #art figure{
+    border: thin solid darkslategray;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    width: 50%;
+    text-align: center;
+}
+.animated{
+    background-color: darkgray;
+}
+.animated figcaption{
+    color: lightgray;
+}
+.transparent{
+    background-color: lightgray;
+}
+.transparent figcaption{
+    color: darkblue;
+}
+#form input, 
+#form textarea, 
+#form select{
+    box-sizing: border-box;
+    border: 2px solid #C2C2C2;
+    box-shadow: 2px 2px 4px #EBEBEB;
+    padding: 1em;
+    outline: none;
+}
+
+#form input:focus,
+#form textarea:focus,
+#form select:focus{
+    border: 1px solid #0C0;
+}
