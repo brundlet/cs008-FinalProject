@@ -20,7 +20,7 @@ $path_parts = pathinfo($phpSelf);
 
         <!-- see: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/ -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/custom.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/finalP.css" type="text/css" media="screen">
         <?php
         $debug=false;
         if (isset($_GET["debug"])){
