@@ -138,9 +138,7 @@ label{
 #errors ol li{
     color: #ff5555;
 }
-#lab2 a:hover {
-	background-color: red;
-}
+
 table{
     border: 2px solid purple;
     border-collapse: collapse;
@@ -161,39 +159,7 @@ tr:hover{
 .SeaIce h1{
 	background-color: yellow;
 }
-#lab2 h1{
-        text-transform: uppercase;
-}
-/* Lab3*/
-body#lab3, body#contest{
-    background-color: lavender;
-}
-#lab3 li:nth-child(odd), .Winna li:nth-child(odd){
-    background-color: yellow;
-    color: brown;
-}
-#lab3 li:nth-child(even), .Winna li:nth-child(even){
-    background-color: lightblue;
-    color: red;
-}
-/*Lab 4*/
-body#lab4, body#art{
-    margin: 10px 10px 10px 10px;
-}
-#lab4 img, #art img{
-    max-width: 100%;
-    border-radius: 0.4em;
-}
-#lab4 .small, #art .small{
-    width: 100px;
-}
-#lab4 figure, #art figure{
-    border: thin solid darkslategray;
-    border-radius: 0.4em;
-    padding: 0.5em;
-    width: 50%;
-    text-align: center;
-}
+
 .animated{
     background-color: darkgray;
 }
