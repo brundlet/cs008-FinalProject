@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer>
-	<p>Designed by Brian Rundlet and Andrew Nolin</p>
+	<p>Designed by Brian Rundlet, Andrew Nolin, and Michael Beale</p>
 </footer>
 
 </body>
