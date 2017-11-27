@@ -4,6 +4,15 @@
 p{
 	text-indent: 50px;
 }
+
+h2{
+	text-align: center;
+}
+
+p + h2{
+	text-align: center;
+}
+
 figure{
     border: thin solid darkslategray;
     border-radius: 0.4em;
@@ -78,11 +87,7 @@ fieldset{
     margin-top: 2em;
     padding: 1em;
 }
-label{
-    color: lightcoral;
-    font-size: 1em;
-    font-weight: bold;
-}
+
 .form-heading{
     border-bottom: 2px solid #ddd;
     font-size: 1.25em;
