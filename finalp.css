@@ -1,18 +1,9 @@
 *{
-	font-family: verdana;
+	font-family: trebuchet MS;
 }
 p{
 	text-indent: 50px;
 }
-
-h2{
-	text-align: center;
-}
-
-p + h2{
-	text-align: center;
-}
-
 figure{
     border: thin solid darkslategray;
     border-radius: 0.4em;
@@ -57,7 +48,7 @@ nav ol li{
     list-style-type: none;
     padding: 6px;
     text-align: center;
-    width: 6em
+    width: 10em
 }
 nav ol li:hover{
     background-color: #ccccff;
@@ -87,7 +78,6 @@ fieldset{
     margin-top: 2em;
     padding: 1em;
 }
-
 .form-heading{
     border-bottom: 2px solid #ddd;
     font-size: 1.25em;
@@ -98,8 +88,8 @@ fieldset{
 .text-field{
     display: block;
     float: left;
-    margin: 0 0 1.2em;
-    padding-right: 0.5em;
+    //margin: 0 0 1.2em;
+    padding-right: 0.7em;
     padding-top: 0.75em;
     text-align: right;
     width: 7em;
@@ -125,9 +115,6 @@ fieldset{
     padding: 0.8em 1.4em;
     cursor:pointer;
 }
-.buttons input{
-    
-}
 #form input[type=submit]:hover{
     background: lightcyan;
     color: black;
@@ -144,23 +131,6 @@ fieldset{
     color: #ff5555;
 }
 
-table{
-    border: 2px solid purple;
-    border-collapse: collapse;
-}
-th, td{
-    border: 2px dashed purple;
-    padding: .4em;
-}
-tr:nth-child(odd){
-    background-color: lightgreen;
-}
-tr:nth-child(even){
-    background-color: #f9e45e;
-}
-tr:hover{
-    background-color: lightcyan;
-}
 .SeaIce h1{
 	background-color: yellow;
 }
