@@ -121,7 +121,6 @@ $birthdayError = false;
         $errorMsg[] = "Please choose at least one trait";
         $activityERROR = true;
     }
-    $dataRecord[] = $mountain;
 //Error check: SECTION 2c.
 // none if you set a default value. here i am just checking if they picked
 // one. You could check to see if mountain is == to one of the ones you
