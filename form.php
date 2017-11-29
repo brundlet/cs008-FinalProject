@@ -73,6 +73,9 @@ $birthdayError = false;
         if($zip==""){
             $errorMsg[]='Please enter your zip code';
             $zipERROR=true;
+        }elseif(!verifyNum($zip)){
+            $errorMsg[]='Please enter a valid zip code';
+            $zipERROR = true;
         }
         $social=  htmlentities($_POST["txtSocial"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$social;
