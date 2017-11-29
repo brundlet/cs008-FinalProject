@@ -43,8 +43,8 @@ $birthdayError = false;
         if($fullName==""){
             $errorMsg[]='Please enter your full name';
             $fullNameERROR=true;
-        }elseif(!verifyAlphaNum($fullName)){
-        $errorMsg[]="Your full name has an extra character";
+        }elseif(!verifyAlpha($fullName)){
+        $errorMsg[]="Your full name is invalid";
         $fullNameERROR=true;
         }
          if($email == ""){
