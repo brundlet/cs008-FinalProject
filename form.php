@@ -38,6 +38,8 @@ $birthdayError = false;
         $dataRecord[]=$fullName;
         $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
         $dataRecord[]=$email;
+        
+        //error checking
         if($fullName==""){
             $errorMsg[]='Please enter your full name';
             $fullNameERROR=true;
