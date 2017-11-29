@@ -7,7 +7,7 @@ include 'top.php';
     $address="";
     $social="";
     $zip="";
-    $email= 'youremail@uvm.edu';
+    $email= '';
     $emailERROR=false;
     $fullNameError=false;
     $passwordError=false;
@@ -17,7 +17,7 @@ include 'top.php';
     $errorMsg=array();
     $dataRecord=array();
     $mailed=false;
-    $gender="hi";
+    $gender="other";
     $genderERROR = false;
     $birth="";
     $married = false;    // checked
@@ -25,6 +25,7 @@ include 'top.php';
     $student=false;
     $activityERROR = false;
     $totalChecked = 0;
+    
 $birthdayError = false;
 //Sanitize: SECTION 2b.
 //$mountain = htmlentities($_POST["1stMountain"],ENT_QUOTES,"UTF-8");
