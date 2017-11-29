@@ -64,7 +64,7 @@ $birthdayError = false;
         $dataRecord[]=$address;
         if($address==""){
             $errorMsg[]='Please enter your address';
-            $passwordERROR=true;
+            $addressERROR=true;
         }
         
         $zip=  htmlentities($_POST["txtZip"], ENT_QUOTES,"UTF-8");
@@ -77,7 +77,7 @@ $birthdayError = false;
         $dataRecord[]=$social;
         if($social==""){
             $errorMsg[]='Please enter your social security number';
-            $passwordERROR=true;
+            $socialERROR=true;
         }
        
         
