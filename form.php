@@ -9,15 +9,15 @@ include 'top.php';
     $zip="";
     $email= '';
     $emailERROR=false;
-    $fullNameError=false;
-    $passwordError=false;
-    $addressError=false;
-    $socialError=false;
-    $zipError=false;
+    $fullNameERROR=false;
+    $passwordERROR=false;
+    $addressERROR=false;
+    $socialERROR=false;
+    $zipERROR=false;
     $errorMsg=array();
     $dataRecord=array();
     $mailed=false;
-    $gender="other";
+    $gender="hi";
     $genderERROR = false;
     $birth="";
     $married = false;    // checked
@@ -25,7 +25,6 @@ include 'top.php';
     $student=false;
     $activityERROR = false;
     $totalChecked = 0;
-    
 $birthdayError = false;
 //Sanitize: SECTION 2b.
 //$mountain = htmlentities($_POST["1stMountain"],ENT_QUOTES,"UTF-8");
@@ -44,7 +43,7 @@ $birthdayError = false;
             $fullNameERROR=true;
         }elseif(!verifyAlphaNum($fullName)){
         $errorMsg[]="Your full name has an extra character";
-        $fullNameError=true;
+        $fullNameERROR=true;
         }
          if($email == ""){
             $errorMsg[]='Please enter your email address';
@@ -87,15 +86,7 @@ $birthdayError = false;
         $errorMsg[] = "Please choose a gender";
         $genderERROR = true;
     }
-   $birth=  htmlentities($_POST["txtBirth"], ENT_QUOTES,"UTF-8");
-        $dataRecord[]=$birth;
-        if($birth==""){
-            $errorMsg[]='Please enter your birthday';
-            $birthdayERROR=true;
-        }
-   
-    
-    if (isset($_POST["txtMarried"])) {
+     if (isset($_POST["txtMarried"])) {
         $married= true;
         $totalChecked++;
     } else {
@@ -122,6 +113,15 @@ $birthdayError = false;
         $errorMsg[] = "Please choose at least one trait";
         $activityERROR = true;
     }
+   $birth=  htmlentities($_POST["txtBirth"], ENT_QUOTES,"UTF-8");
+        $dataRecord[]=$birth;
+        if($birth==""){
+            $errorMsg[]='Please enter your birthday';
+            $birthdayERROR=true;
+        }
+   
+    
+   
 //Error check: SECTION 2c.
 // none if you set a default value. here i am just checking if they picked
 // one. You could check to see if mountain is == to one of the ones you
@@ -347,7 +347,7 @@ $birthdayError = false;
                     </p>
     </fieldset>
        
-<fieldset  class="birthday <?php if ($birthdayError) print ' mistake'; ?>">
+<fieldset  class="birthday <?php if ($birthdayERROR) print ' mistake'; ?>">
     <legend>Birthday</legend>
      <p>
                         <label class="check-field">
