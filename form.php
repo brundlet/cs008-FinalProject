@@ -47,6 +47,7 @@ $birthdayError = false;
         $errorMsg[]="Your full name is invalid";
         $fullNameERROR=true;
         }
+        
          if($email == ""){
             $errorMsg[]='Please enter your email address';
             $emailERROR=true;
@@ -55,12 +56,14 @@ $birthdayError = false;
             $errorMsg[]='Your email address is incorrect.';
             $emailERROR=true;
         }
+        
         $password=  htmlentities($_POST["txtPassword"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$password;
         if($password==""){
             $errorMsg[]='Please enter your password';
             $passwordERROR=true;
         }
+        
         $address=  htmlentities($_POST["txtAddress"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$address;
         if($address==""){
@@ -77,10 +80,14 @@ $birthdayError = false;
             $errorMsg[]='Please enter a valid zip code';
             $zipERROR = true;
         }
+        
         $social=  htmlentities($_POST["txtSocial"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$social;
         if($social==""){
             $errorMsg[]='Please enter your social security number';
+            $socialERROR=true;
+        }elseif(!verifyNum($social)){
+            $errorMsg[]='please enter a valid social security number';
             $socialERROR=true;
         }
        
