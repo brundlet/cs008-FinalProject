@@ -151,7 +151,7 @@ $birthdayError = false;
                 $to=$email;
                 $cc='';
                 $bcc='';
-                $from='PleaseHaveMyIdentity.com <customer.service@PleaseHaveMyIdentity.com>';
+                $from='IdentityVault.com <support@IdentityVualt.com>';
                 $subject='Got Your Identity!';
                 $mailed= sendMail($to,$cc,$bcc,$from,$subject,$message);
         }
@@ -170,8 +170,7 @@ $birthdayError = false;
         print $message;
     }else{
         print '<h2>Submit Your Identity Today</h2>';
-        print '<p class="form-heading">Nobody can steal it then, right?</p>';
-    
+        print '<p class="form-heading">We will keep it safe for you</p>';
         if ($errorMsg){
             print '<div id="errors">'.PHP_EOL;
             print '<h2>Your form has these mistakes:</h2>'.PHP_EOL;

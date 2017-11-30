@@ -1,5 +1,5 @@
 <!-- ######################     Page header   ############################## -->
 <header>
-    <h1>Please Have My Identity</h1>
+    <h1>Identity Vault</h1>
 </header>
 
