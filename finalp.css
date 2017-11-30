@@ -79,7 +79,7 @@ nav{
     background-color: #333;
 }
 li {
-    margin-left:55px;
+    margin-left:47px;
     float: left;
 }
 
@@ -91,7 +91,7 @@ li a {
     text-align: center;
     padding-top: 9px;
     padding-bottom: 15px;
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 20px;
     text-decoration: none;
 }
@@ -104,19 +104,23 @@ li a:hover:not(.activePage) {
     margin: auto;
 }
 fieldset{
-    border: 2px solid blueviolet;
+    border: 2px solid #333;
     clear: both;
     margin-top: 2em;
     padding: 1em;
 }
 .form-heading{
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid blueviolet;
     font-size: 1.25em;
     font-weight: bold;
     margin-bottom: 1.75em;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.5em;
     text-align: center;
-    margin-right: 50px;
+    //margin-right: 50px;
+}
+.pages{
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 0.5em;
 }
 .text-field{
     display: block;

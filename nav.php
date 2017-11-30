@@ -8,7 +8,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="index.php">Home</a>';
+        print '<a href="index.php">HOME</a>';
         print '</li>';
         
        
@@ -18,7 +18,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="news.php">Identity Theft News</a>';
+        print '<a href="news.php">IDENTITY THEFT NEWS</a>';
         print '</li>';
         
         print '<li class="';
@@ -26,7 +26,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="happens.php">Dangers</a>';
+        print '<a href="happens.php">DANGERS</a>';
         print '</li>';
         
         print '<li class="';
@@ -34,7 +34,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="todo.php">What To Do</a>';
+        print '<a href="todo.php">WHAT TO DO</a>';
         print '</li>';
         
         print '<li class="';
@@ -42,7 +42,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="form.php">Join</a>';
+        print '<a href="form.php">JOIN</a>';
         print '</li>';
         
          print '<li class="';
