@@ -38,16 +38,13 @@ $birthdayError = false;
         $dataRecord[]=$fullName;
         $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
         $dataRecord[]=$email;
-        
-        //error checking
         if($fullName==""){
             $errorMsg[]='Please enter your full name';
             $fullNameERROR=true;
-        }elseif(!verifyAlpha($fullName)){
-        $errorMsg[]="Your full name is invalid";
+        }elseif(!verifyAlphaNum($fullName)){
+        $errorMsg[]="Your full name has an extra character";
         $fullNameERROR=true;
         }
-        
          if($email == ""){
             $errorMsg[]='Please enter your email address';
             $emailERROR=true;
@@ -56,14 +53,12 @@ $birthdayError = false;
             $errorMsg[]='Your email address is incorrect.';
             $emailERROR=true;
         }
-        
         $password=  htmlentities($_POST["txtPassword"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$password;
         if($password==""){
             $errorMsg[]='Please enter your password';
             $passwordERROR=true;
         }
-        
         $address=  htmlentities($_POST["txtAddress"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$address;
         if($address==""){
@@ -76,18 +71,11 @@ $birthdayError = false;
         if($zip==""){
             $errorMsg[]='Please enter your zip code';
             $zipERROR=true;
-        }elseif(!verifyNum($zip)){
-            $errorMsg[]='Please enter a valid zip code';
-            $zipERROR = true;
         }
-        
         $social=  htmlentities($_POST["txtSocial"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$social;
         if($social==""){
             $errorMsg[]='Please enter your social security number';
-            $socialERROR=true;
-        }elseif(!verifyNum($social)){
-            $errorMsg[]='please enter a valid social security number';
             $socialERROR=true;
         }
        
@@ -181,8 +169,8 @@ $birthdayError = false;
         print '<p>To: '.$email.'</p>';
         print $message;
     }else{
-        print '<h2>Register Today</h2>';
-        print '<p class="form-heading">Your information will greatly help us with our research.</p>';
+        print '<h2>Submit Your Identity Today</h2>';
+        print '<p class="form-heading">Nobody can steal it then, right?</p>';
     
         if ($errorMsg){
             print '<div id="errors">'.PHP_EOL;

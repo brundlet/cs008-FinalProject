@@ -11,13 +11,7 @@
         print '<a href="index.php">Home</a>';
         print '</li>';
         
-        print '<li class="';
-        if ($path_parts['filename'] == "form") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="form.php">Join</a>';
-        print '</li>';
+       
         
         print '<li class="';
         if ($path_parts['filename'] == "news") {
@@ -41,6 +35,22 @@
         }
         print '">';
         print '<a href="todo.php">What To Do</a>';
+        print '</li>';
+        
+        print '<li class="';
+        if ($path_parts['filename'] == "form") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="form.php">Join</a>';
+        print '</li>';
+        
+         print '<li class="';
+        if ($path_parts['filename'] == "faq") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="faq.php">FAQ</a>';
         print '</li>';
         
         ?>

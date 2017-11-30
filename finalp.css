@@ -4,6 +4,30 @@
 p{
 	text-indent: 50px;
 }
+h2{
+    text-align: center;
+}
+h2+p{
+    text-align: center;
+}
+nav,
+header,
+article{
+    max-width: 1000px;
+    margin-top: 0px; 
+    margin-right: auto; 
+    margin-bottom: 0px; 
+    margin-left: auto;
+}
+
+
+h1{
+    margin-left: 250px;
+    
+}
+header{
+    border-bottom: 6px solid #333;
+}
 figure{
     border: thin solid darkslategray;
     border-radius: 0.4em;
@@ -39,34 +63,41 @@ img{
 #top{
     background-color: lightcyan;
 }
-nav{
-    background-color: lightcyan;
-    padding: 0.3em
+
+.activePage a{
+    
+  border-top: 3px solid white;
 }
-nav ol li{
-    display: inline-block;
+
+ol {
     list-style-type: none;
-    padding: 6px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav{
+    background-color: #333;
+}
+li {
+    margin-left:55px;
+    float: left;
+}
+
+li a {
+    border-top:3px solid transparent;
+    display: block;
+    //display:inline-block;
+    color: white;
     text-align: center;
-    width: 10em
-}
-nav ol li:hover{
-    background-color: #ccccff;
-    padding: 4px;
-}
-a:link{
-    background-color: #fff;
-    color: #009;
+    padding-top: 9px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
-}
-.activepage{
-    background-color: whitesmoke;
-    border-top-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-    box-shadow: 0.3em 0.3em 0.3em grey;
+
+li a:hover:not(.activePage) {
+   border-top: 3px solid white;
 }
 #form form{
     max-width: 38em;
