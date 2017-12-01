@@ -21,6 +21,7 @@ include 'top.php';
     $genderERROR = false;
     $birth="";
     $married = false;    // checked
+    $unmarried=false;
     $military = false; // not checked
     $student=false;
     $activityERROR = false;
@@ -72,19 +73,18 @@ $birthdayError = false;
             $errorMsg[]='Please enter your zip code';
             $zipERROR=true;
         }elseif(!verifyNumeric($zip)){
-            $errorMsg[]="your zip code should only contain numbers";
-            $zipERROR = true;
+ +            $errorMsg[]="your zip code should only contain numbers";
+ +            $zipERROR = true;
         }
-        
         $social=  htmlentities($_POST["txtSocial"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$social;
         if($social==""){
             $errorMsg[]='Please enter your social security number';
             $socialERROR=true;
         }elseif(!verifyNumeric($social)){
-            $errorMsg[]="your ssn should only contain numbers";
-            $socialERROR = true;
-        }
+ +            $errorMsg[]="your ssn should only contain numbers";
+ +            $socialERROR = true;
+          }
        
         
     $gender = htmlentities($_POST["radGender"], ENT_QUOTES, "UTF-8");
@@ -98,6 +98,13 @@ $birthdayError = false;
         $totalChecked++;
     } else {
         $married= false;
+    }
+    $dataRecord[] = $maried; 
+     if (isset($_POST["txtUnmarried"])) {
+        $unmarried= true;
+        $totalChecked++;
+    } else {
+        $unmarried= false;
     }
     $dataRecord[] = $maried; 
     if (isset($_POST["txtMilitary"])) {
@@ -177,7 +184,7 @@ $birthdayError = false;
         print $message;
     }else{
         print '<h2>Submit Your Identity Today</h2>';
-        print '<p class="form-heading">We will keep it safe for you</p>';
+        print '<h3 class="pages form-heading">We will keep it safe for you</h3>';
         if ($errorMsg){
             print '<div id="errors">'.PHP_EOL;
             print '<h2>Your form has these mistakes:</h2>'.PHP_EOL;
@@ -320,7 +327,7 @@ $birthdayError = false;
     </fieldset>
 
     <fieldset class="checkbox <?php if ($activityERROR) print ' mistake'; ?>">
-        <legend>Are You(choose at least one and check all that apply):</legend>
+        <legend>Are You:</legend>
 
                     <p>
                         <label class="check-field">
@@ -331,6 +338,16 @@ $birthdayError = false;
                                 tabindex="420"
                                 type="checkbox"
                                 value="Married">Married</label>
+                    </p>
+                    <p>
+                        <label class="check-field">
+                            <input <?php if ($married) print " checked "; ?>
+                                
+                                id="txtUnmarried"
+                                name="txtUnmarried"
+                                tabindex="420"
+                                type="checkbox"
+                                value="Unmarried">Unmarried</label>
                     </p>
 
                     <p>
@@ -368,11 +385,11 @@ $birthdayError = false;
                                 >
     </p>
 </fieldset>
-          <fieldset class="buttons">  
-          <legend></legend>
+<!--          <fieldset class="buttons">  
+          <legend></legend>-->
           <input class="button" id="btnSubmit" name="btnSubmit" tabindex="900" type="submit" value="Register">
-    </fieldset>
-          </fieldset>
+<!--    </fieldset>
+          </fieldset>-->
 
 </form>
     <?php
@@ -380,5 +397,3 @@ $birthdayError = false;
     ?>
 </article>
 <?php include 'footer.php'; ?>
-</body>
-</html>

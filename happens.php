@@ -7,3 +7,6 @@ include('top.php');
                 email, password, home address, and zip code, they can instantly assume your identity. 
             </p>
 </article>
+<?php
+include('footer.php');
+?>

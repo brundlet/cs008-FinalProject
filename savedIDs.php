@@ -1,6 +1,5 @@
 <?php
 	include('top.php');
-
 	$filename = 'data/registration.csv';
 	$file = $file = fopen($filename, "r");
 	$ids[];

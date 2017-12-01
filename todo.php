@@ -7,3 +7,6 @@ include('top.php');
             </p>
 </article>
 
+<?php
+include('footer.php');
+?>

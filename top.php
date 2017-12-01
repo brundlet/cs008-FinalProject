@@ -12,11 +12,11 @@ $path_parts = pathinfo($phpSelf);
 <html lang="en">
     <head>
 <!-- you can add php code here (similar to nav.php) to print a different title on each page -->
-        <title>Please Have My Identity</title>
+        <title>Identity Vault</title>
 
         <meta charset="utf-8">
         <meta name="author" content="Brian Rundlet">
-        <meta name="description" content="Final Proj">
+        <meta name="description" content="Identity Vault">
 
         <!-- see: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/ -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
