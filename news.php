@@ -18,10 +18,10 @@
         </article>
 
         <article class='clipper'>
-            <h1><a href="http://www.nytimes.com/1994/06/12/magazine/battle-of-the-clipper-chip.html?pagewanted=all">Battle of the Clipper chip</a></h1>
+            <h1><a src="http://www.nytimes.com/1994/06/12/magazine/battle-of-the-clipper-chip.html?pagewanted=all">Battle of the Clipper chip</a></h1>
             <p>NY Times, June 12, 1994</p>
             <figure>
-                <img href="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAMwAAAAJDg3NTY3OWM4LTliY2MtNDY1YS1iZmFlLWJlMjI5OGJkNGExOQ.jpg" alt="">
+                <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAMwAAAAJDg3NTY3OWM4LTliY2MtNDY1YS1iZmFlLWJlMjI5OGJkNGExOQ.jpg" alt="">
                 <figcaption>The MYK-78 "Clipper"</figcaption>
             </figure>
             
@@ -34,7 +34,7 @@
             <p></p>
             
             <figure>
-                <img href="" alt="">
+                <img src="" alt="">
                 <figcaption></figcaption>
             </figure>
             
