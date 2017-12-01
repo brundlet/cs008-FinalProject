@@ -41,7 +41,7 @@ $birthdayError = false;
         if($fullName==""){
             $errorMsg[]='Please enter your full name';
             $fullNameERROR=true;
-        }elseif(!verifyAlphaNum($fullName)){
+        }elseif(!verifyAlpha($fullName)){
         $errorMsg[]="Your full name has an extra character";
         $fullNameERROR=true;
         }
@@ -71,12 +71,19 @@ $birthdayError = false;
         if($zip==""){
             $errorMsg[]='Please enter your zip code';
             $zipERROR=true;
+        }elseif(!verifyNumeric($zip)){
+            $errorMsg[]="your zip code should only contain numbers";
+            $zipERROR = true;
         }
+        
         $social=  htmlentities($_POST["txtSocial"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$social;
         if($social==""){
             $errorMsg[]='Please enter your social security number';
             $socialERROR=true;
+        }elseif(!verifyNumeric($social)){
+            $errorMsg[]="your ssn should only contain numbers";
+            $socialERROR = true;
         }
        
         
