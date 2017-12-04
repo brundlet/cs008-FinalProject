@@ -213,3 +213,19 @@ fieldset{
 #form select:focus{
     border: 1px solid #0C0;
 }
+
+
+/*rules for displaying the csv*/
+td{
+	border: 2px solid #000000;
+}
+tr:nth-child(even){
+	background-color: #eeeeee;
+}
+tr:hover{
+	background-color: #cccccc;
+}
+th{
+	border-bottom: 4px solid #000000;
+	background-color: #bbbbbb;
+}
