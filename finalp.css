@@ -8,19 +8,25 @@ p{
 	text-indent: 50px;
 }
 h2{
+    
     text-align: center;
 }
 .g{
     max-width: 12%;
     max-height: 12%;
 }
+.headTitle{
+    font-size: 227%;
+    margin-top: -7px; 
+    margin-right: 89px; 
+    margin-bottom: 2px; 
+    //margin-left: 10px;
+    padding: 0px;
+}
 .headpic{
     max-width: 12%;
     max-height: 12%;
-    //margin-top:40px;
-}
-h2+p{
-    //text-align: center;
+    margin-right:11px;
 }
 nav,
 header,
@@ -81,8 +87,13 @@ img{
 .activePage a{
   border-top: 3px solid white;
 }
-
-ol {
+.listSpace{
+    margin-left:91px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.navigate{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -138,6 +149,7 @@ fieldset{
     text-align: center;
 }
 .pages{
+    //background-color: whitesmoke;
     border-bottom: 2px solid blueviolet;
     padding-bottom: 0.5em;
 }
@@ -186,19 +198,6 @@ fieldset{
     color: #ff5555;
 }
 
-
-.animated{
-    background-color: darkgray;
-}
-.animated figcaption{
-    color: lightgray;
-}
-.transparent{
-    background-color: lightgray;
-}
-.transparent figcaption{
-    color: darkblue;
-}
 #form input, 
 #form textarea, 
 #form select{

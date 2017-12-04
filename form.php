@@ -123,10 +123,10 @@ $birthdayError = false;
     $dataRecord[] = $student;
     // Error check: SECTION 2c.
     // may not need to check for any
-    if($totalChecked < 1){
-        $errorMsg[] = "Please choose at least one trait";
-        $activityERROR = true;
-    }
+//    if($totalChecked < 1){
+//        $errorMsg[] = "Please choose at least one trait";
+//        $activityERROR = true;
+//    }
    $birth=  htmlentities($_POST["txtBirth"], ENT_QUOTES,"UTF-8");
         $dataRecord[]=$birth;
         if($birth==""){
@@ -140,7 +140,6 @@ $birthdayError = false;
 // none if you set a default value. here i am just checking if they picked
 // one. You could check to see if mountain is == to one of the ones you
 // have, similar to radio buttons
-
         if (!$errorMsg){
                 print '<p>Form is valid</p>';
                 $myFileName='./data/registration';
@@ -339,17 +338,6 @@ $birthdayError = false;
                                 type="checkbox"
                                 value="Married">Married</label>
                     </p>
-                    <p>
-                        <label class="check-field">
-                            <input <?php if ($married) print " checked "; ?>
-                                
-                                id="txtUnmarried"
-                                name="txtUnmarried"
-                                tabindex="420"
-                                type="checkbox"
-                                value="Unmarried">Unmarried</label>
-                    </p>
-
                     <p>
                         <label class="check-field">
                             <input <?php if ($military)  print " checked "; ?>

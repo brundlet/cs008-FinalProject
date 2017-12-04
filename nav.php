@@ -1,6 +1,6 @@
 <!-- ######################     Main Navigation   ########################## -->
 <nav>
-    <ol>
+    <ol class="navigate">
         <?php
         
         print '<li class="';
