@@ -11,8 +11,13 @@ h2{
     text-align: center;
 }
 .g{
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 12%;
+    max-height: 12%;
+}
+.headpic{
+    max-width: 12%;
+    max-height: 12%;
+    //margin-top:40px;
 }
 h2+p{
     //text-align: center;
