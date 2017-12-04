@@ -21,7 +21,7 @@
 ?>
 
 <article id="content">
-	<h3>If you make your data public, it can't be stolen!<h3>
+	<h3>If you make your data public, it can't be stolen!</h3>
 	
 	<table>
 		<caption>User Submitted Personal Infromation</caption>
