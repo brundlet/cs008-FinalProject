@@ -1,7 +1,9 @@
 <?php
 	include('top.php');
+
 	$filename = 'data/registration.csv';
-	$file = $file = fopen($filename, "r");
+	$file = fopen($filename, 'r');
+	print('<p>this sucks</p>');
 	$ids[];
 	$dataOK = false;
 	if($file){
@@ -45,7 +47,7 @@
 	</table>
 	
 	<?php
-		if(!$dataOK) print'<p>No data to display</p>';
+		if(!$dataOK) print'<p>No data to displayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>';
 	?>
 	
 </article>

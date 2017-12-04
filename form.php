@@ -143,7 +143,7 @@ $birthdayError = false;
 
         if (!$errorMsg){
                 print '<p>Form is valid</p>';
-                $myFileName='data/registration';
+                $myFileName='./data/registration';
                 $fileExt='.csv';
                 $filename=$myFileName.$fileExt;
                 //if($debug){
