@@ -3,15 +3,18 @@
 
 	$filename = 'data/registration.csv';
 	$file = fopen($filename, 'r');
-	print('<p>this sucks</p>');
-	$ids[];
 	$dataOK = false;
 	if($file){
 		$dataOK = true;
 		$headers = fgetcsv($file);
+		
 		while(!eof($file)){
 			$element = fgetcsv($file);
-			if($element != "") $ids[] = $element;
+			
+			if($element != "") {
+				$ids[] = $element;
+			}
+			
 		}
 		fclose($file);
 	}
@@ -47,7 +50,9 @@
 	</table>
 	
 	<?php
-		if(!$dataOK) print'<p>No data to displayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>';
+		if(!$dataOK) {
+			print'<p>No data to display</p>';
+		}
 	?>
 	
 </article>
