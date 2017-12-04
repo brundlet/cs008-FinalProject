@@ -26,7 +26,7 @@ include ('top.php');
                 enter your identity details and our experts will use their advanced algorithms to search the web to see if your identity 
                 has been compromised on any sites. We will then perform the same checks periodically, and we will send
                 you an email if we find a breach. Your identity is safe with us.</p>
-            <p><a href="savedIDs.php">Click here</a> for list of our satisfied customers</p>
+            <p><a href="data/registration.csv">Click here</a> for list of our satisfied customers</p>
               
 </article>
 <?php
