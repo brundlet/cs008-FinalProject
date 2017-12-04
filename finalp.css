@@ -17,15 +17,15 @@ h2{
 }
 .headTitle{
     font-size: 227%;
-    margin-top: -7px; 
-    margin-right: 89px; 
-    margin-bottom: 2px; 
+    margin-top: -3px; 
+    margin-right: 105px; 
+    margin-bottom: 6px; 
     //margin-left: 10px;
     padding: 0px;
 }
 .headpic{
-    max-width: 12%;
-    max-height: 12%;
+    max-width: 11.5%;
+    max-height: 11.5%;
     margin-right:11px;
 }
 nav,
@@ -78,12 +78,9 @@ img{
 .roundedCornersSmall{
     border-radius: 0.4em;
 }
-
 .small {
     width: 180px;
-
 }
-
 .activePage a{
   border-top: 3px solid white;
 }
@@ -119,14 +116,6 @@ li a {
     padding-right: 1px;
     text-decoration: none;
 }
-/*header,
-nav{
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;  Set the navbar to fixed position 
-    top: 0;  Position the navbar at the top of the page 
-    width: 100%;  Full width 
-}*/
 li a:hover:not(.activePage) {
    border-top: 3px solid white;
 }
@@ -156,16 +145,17 @@ fieldset{
 .text-field{
     display: block;
     float: left;
-    //margin: 0 0 1.2em;
-    padding-right: 0.7em;
-    padding-top: 0.75em;
+/*    padding-right: 0.7em;
+    padding-top: 0.75em;*/
+padding-right: 0.3em;
+    padding-top: 0.5em;
     text-align: right;
     width: 7em;
 }
 #form input{
     box-sizing: border-box;
     border: 2px solid turquoise;
-    box-shadow: 2px 2px 4px #EBEBEB;
+    //box-shadow: 2px 2px 4px #EBEBEB;
     border-radius: 3px;
     padding: 1em;
     outline: none;
@@ -177,7 +167,7 @@ fieldset{
     background: blueviolet none repeat scroll 0 0;
     border: medium none;
     border-radius: 3px;
-    box-shadow: 1px 1px 4px #dadada;
+    //box-shadow: 1px 1px 4px #dadada;
     color: #fff;
     margin-top: 1.5em;
     margin-left: 5em;
@@ -185,14 +175,15 @@ fieldset{
     cursor:pointer;
 }
 #form input[type=submit]:hover{
-    //background: blueviolet;
     color: black;
 }
 
 .mistake{
-    color: #fff;
+    color: red;
+    font-weight: bold;
+/*    color: #fff;
     background-color: #800;
-    border: thin solid #000;
+    border: thin solid #000;*/
 }
 #errors ol li{
     color: #ff5555;
@@ -203,7 +194,7 @@ fieldset{
 #form select{
     box-sizing: border-box;
     border: 2px solid #C2C2C2;
-    box-shadow: 2px 2px 4px #EBEBEB;
+    //box-shadow: 2px 2px 4px #EBEBEB;
     padding: 1em;
     outline: none;
 }
@@ -212,20 +203,4 @@ fieldset{
 #form textarea:focus,
 #form select:focus{
     border: 1px solid #0C0;
-}
-
-
-/*rules for displaying the csv*/
-td{
-	border: 2px solid #000000;
-}
-tr:nth-child(even){
-	background-color: #eeeeee;
-}
-tr:hover{
-	background-color: #cccccc;
-}
-th{
-	border-bottom: 4px solid #000000;
-	background-color: #bbbbbb;
 }

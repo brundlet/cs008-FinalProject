@@ -26,7 +26,7 @@ include 'top.php';
     $student=false;
     $activityERROR = false;
     $totalChecked = 0;
-$birthdayError = false;
+$birthdayERROR = false;
 //Sanitize: SECTION 2b.
 //$mountain = htmlentities($_POST["1stMountain"],ENT_QUOTES,"UTF-8");
     if(isset($_POST["btnSubmit"])){
@@ -200,11 +200,10 @@ $birthdayError = false;
       id="frmRegister"
       method="post">
       <fieldset class ="contact">
-          <legend>Your Contact Information</legend>
+          <legend>Personal Information:</legend>
           <p>
-              <label class="required text-field" for="txtFullName">Full Name</label>
+              <label class="text-field <?php if ($fullNameERROR) print ' mistake';?>" for="txtFullName">Full Name</label>
               <input autofocus
-                     <?php if ($fullNameERROR) print 'class="mistake"';?>
                      id="txtFullName"
                      maxlength="45"
                      name="txtFullName"
@@ -217,9 +216,8 @@ $birthdayError = false;
           </p>
           
           <p> 
-              <label class="required text-field" for="txtEmail">Email</label>
+              <label class="text-field<?php if ($emailERROR) print ' mistake';?>" for="txtEmail">Email</label>
                   <input
-                      <?php if($emailERROR) print 'class="mistake"';?>
                       id="txtEmail"
                       maxlength="45"
                       name="txtEmail"
@@ -232,9 +230,8 @@ $birthdayError = false;
                   
           </p>
           <p>
-              <label class="required text-field" for="txtPassword">Password</label>
+              <label class="text-field<?php if ($passwordERROR) print ' mistake';?>" for="txtPassword">Password</label>
               <input 
-                     <?php if ($passwordERROR) print 'class="mistake"';?>
                      id="txtPassword"
                      maxlength="45"
                      name="txtPassword"
@@ -246,23 +243,21 @@ $birthdayError = false;
                      >
           </p>
           <p>
-              <label class="required text-field" for="txtAddress">Home Address</label>
+              <label class="text-field<?php if ($addressERROR) print ' mistake';?>" for="txtAddress">Home Address</label>
               <input 
-                     <?php if ($addressERROR) print 'class="mistake"';?>
                      id="txtAddress"
                      maxlength="45"
                      name="txtAddress"
                      onfocus="this.select()"
-                     placeholder="Enter your Address"
+                     placeholder="Enter your address"
                      tabindex="100"
                      type="text"
                      value="<?php print $address; ?>"
                      >
           </p>
           <p>
-              <label class="required text-field" for="txtZip">Zip Code</label>
+              <label class="text-field<?php if ($zipERROR) print ' mistake';?>" for="txtZip">Zip Code</label>
               <input 
-                     <?php if ($zipERROR) print 'class="mistake"';?>
                      id="txtZip"
                      maxlength="5"
                      name="txtZip"
@@ -274,9 +269,8 @@ $birthdayError = false;
                      >
           </p>
           <p>
-              <label class="required text-field" for="txtSocial">Social Security Number</label>
+              <label class="required text-field<?php if ($socialERROR) print ' mistake';?>" for="txtSocial">Social Security</label>
               <input 
-                     <?php if ($socialERROR) print 'class="mistake"';?>
                      id="txtSocial"
                      maxlength="9"
                      name="txtSocial"
@@ -288,9 +282,21 @@ $birthdayError = false;
                      >
           </p>
           
+<!--             <legend>Birthday:</legend>-->
+     <p>
+         <label class="birth text-field<?php if ($birthdayERROR) print ' mistake';?>">Birthday</label>
+                            <input
+                                onfocus="this.select()"
+                                id="txtBirth"
+                                name="txtBirth"
+                                tabindex="100"
+                                type="date"
+                                >
+    </p>
+          
         
     <fieldset class="radio <?php if ($genderERROR) print ' mistake'; ?>">
-        <legend>What is your gender?</legend>
+        <legend>Gender:</legend>
         <p>
             <label class="radio-field">
                 <input type="radio" 
@@ -358,8 +364,8 @@ $birthdayError = false;
                     </p>
     </fieldset>
        
-<fieldset  class="birthday <?php if ($birthdayERROR) print ' mistake'; ?>">
-    <legend>Birthday</legend>
+<!--<fieldset  class="birthday <?php if ($birthdayERROR) print ' mistake'; ?>">
+    <legend>Birthday:</legend>
      <p>
                         <label class="check-field">
                             <input <?php if ($birth) print " checked "; ?>
@@ -372,7 +378,7 @@ $birthdayError = false;
                                 </label
                                 >
     </p>
-</fieldset>
+</fieldset>-->
 <!--          <fieldset class="buttons">  
           <legend></legend>-->
           <input class="button" id="btnSubmit" name="btnSubmit" tabindex="900" type="submit" value="Register">
