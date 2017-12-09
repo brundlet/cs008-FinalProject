@@ -293,6 +293,7 @@ $birthdayERROR = false;
                                 type="date"
                                 >
     </p>
+    </fieldset>
           
         
     <fieldset class="radio <?php if ($genderERROR) print ' mistake'; ?>">
