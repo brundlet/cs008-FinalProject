@@ -8,7 +8,7 @@
             <p>Harvard Gazette, August 24, 2017.</p>
             
             <figure>
-                <img href="https://harvardgazette.files.wordpress.com/2017/07/071117_schneier_2835_605.jpg" alt="">
+                <img class="roundedCornersSmall" src="../images/bruce.jpg" alt="">
                 <figcaption>Bruce Schneier, a cybersecurity expert.</figcaption>
             </figure>
             
@@ -28,7 +28,7 @@
             <h1><a href="http://www.nytimes.com/1994/06/12/magazine/battle-of-the-clipper-chip.html?pagewanted=all">Battle of the Clipper chip</a></h1>
             <p>NY Times, June 12, 1994</p>
             <figure>
-                <img href="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAMwAAAAJDg3NTY3OWM4LTliY2MtNDY1YS1iZmFlLWJlMjI5OGJkNGExOQ.jpg" alt="">
+                <img img class="roundedCornersSmall" src="../images/clipper.jpg" alt="fail>
                 <figcaption>The MYK-78 "Clipper"</figcaption>
             </figure>
             
