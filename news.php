@@ -20,7 +20,8 @@
                 and privacy, even pointing out, “it was not an issue in the 2016 election.” </p>
             
             <p>He then goes on to talk about corporate surveillance, saying it is the, “business model of the internet.” The data that corporations collect are used in marketing products to 
-                consumers. The business model Schneier is referring to, is websites sell the data they collect on their users to advertisers </p>
+                consumers. The business model Schneier is referring to, is websites sell the data they collect on their users to advertisers, which get money from companies who want to advertize
+                themselves.</p>
         </article>
 
         <article class='clipper'>
@@ -31,8 +32,14 @@
                 <figcaption>The MYK-78 "Clipper"</figcaption>
             </figure>
             
-            <p></p>
+            <p>Battle of the Clipper Chip</p>
+            
+            <p>The clipper chip was a physical backdoor for encrypted communications proposed by the US federal government. The chip allows for a second key pair to decrypt a message sent
+               through peer-to-peer encryption. The US government wants this sort of access to communications for surveillance. If all phones had a clipper chip installed, the federal 
+               government could listen in while keeping the communication private from the general public. This was relevant in the 90s, when people were using a dial-up service to access
+               the Internet.  </p>
            
+            <p>Clipper chips are a result off powerful governments wanting to have the capability to read otherwise secure messages through the power of law by mandating these chips. </p>
         </article>
 
         <article class="">
