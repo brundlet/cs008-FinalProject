@@ -41,23 +41,11 @@
            
             <p>Clipper chips are a result off powerful governments wanting to have the capability to read otherwise secure messages through the power of law by mandating these chips. </p>
         </article>
-
-        <article class="">
-            <h1><a href=""></a></h1>
-            <p></p>
-            
-            <figure>
-                <img href="" alt="">
-                <figcaption></figcaption>
-            </figure>
-            
-            <p></p>
             
         </article>
     </article>
 <?php
 include('footer.php');
 ?>
-    </body>
-</html>
+
 
